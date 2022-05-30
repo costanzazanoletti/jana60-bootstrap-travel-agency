@@ -160,7 +160,80 @@
         </div>
       </div>
     </section>
-    <section id="contact"></section>
+    <!-- section contact us -->
+    <section id="contact" class="my-5">
+      <div class="container">
+        <h2>Contact us</h2>
+        <!-- contact form -->
+        <form action="#">
+          <div class="row">
+            <div class="col-6">
+              <!-- email -->
+              <label class="form-label" for="email-address">Your email</label>
+              <input
+                class="form-control"
+                type="email"
+                id="email-address"
+                name="email"
+                placeholder="Insert your email address"
+                required
+              />
+            </div>
+            <div class="col-6">
+              <!-- tour -->
+              <label for="tour" class="form-label">Tour</label>
+              <select class="form-select" name="tour" id="tour" required>
+                <option selected>Pick a tour</option>
+                <option value="tour-1">Explore the sea</option>
+                <option value="tour-2">Hike in the forest</option>
+                <option value="tour-3">Camp in the snow</option>
+              </select>
+            </div>
+            <div class="col-6">
+              <!-- start date -->
+              <label class="form-label mt-3" for="start-date">Start date</label>
+              <input
+                class="form-control"
+                type="date"
+                id="start-date"
+                name="start-date"
+                required
+              />
+            </div>
+            <div class="col-6">
+              <!-- end date -->
+              <label class="form-label mt-3" for="end-date">End date</label>
+              <input
+                class="form-control"
+                type="date"
+                id="end-date"
+                name="end-date"
+                required
+              />
+            </div>
+            <div class="col-6">
+              <!-- terms and conditions -->
+              <div class="form-check mt-3">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="accept"
+                  id="accept-terms"
+                />
+                <label class="form-check-label" for="accept-terms">
+                  Accept terms and conditions
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col">
+              <button class="btn btn-dark" type="submit">Send</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
